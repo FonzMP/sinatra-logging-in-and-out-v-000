@@ -5,7 +5,7 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-    if session[:user_id].exist?
+    if Helpers.current_user(session)
       true
     else
       false
