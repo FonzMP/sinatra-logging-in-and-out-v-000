@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
       erb :account
     else
       erb :error
+    end
   end
 
   get '/logout' do
