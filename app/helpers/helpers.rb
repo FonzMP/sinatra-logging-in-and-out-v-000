@@ -5,7 +5,6 @@ class Helpers < ActiveRecord::Base
   end
 
   def self.is_logged_in?(session)
-    binding.pry
     if session.include?(:user_id)
       true
     else
