@@ -18,6 +18,10 @@ class ApplicationController < Sinatra::Base
     else
       if !Helpers.is_logged_in?
         erb :error
+      else
+        erb :account
+      end
+    end
 
   end
 
