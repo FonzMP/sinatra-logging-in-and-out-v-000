@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
       redirect '/account'
     else
       if !Helpers.is_logged_in?
+        erb :error
 
   end
 
